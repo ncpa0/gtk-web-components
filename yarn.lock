@@ -179,6 +179,13 @@
   optionalDependencies:
     json-to-ts "^1.7.0"
 
+"@ncpa0cpl/vanilla-jsx@0.0.1-alpha.28":
+  version "0.0.1-alpha.28"
+  resolved "https://registry.yarnpkg.com/@ncpa0cpl/vanilla-jsx/-/vanilla-jsx-0.0.1-alpha.28.tgz#7e1d68062630fe2b54b0310b11cade72d9ec0bf9"
+  integrity sha512-VQb3Q8kh7UwVbng0EQSHucWuPswgfim0WWn7VdIJ8qtKMgYWJabNmSAXol9QNQLr1NnrKIXUvODL6KWHN/adpQ==
+  dependencies:
+    html-element-attributes "^3.4.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -940,6 +947,11 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
   integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
   dependencies:
     function-bind "^1.1.2"
+
+html-element-attributes@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/html-element-attributes/-/html-element-attributes-3.4.0.tgz#a91c8966998fa57044b08452d49d9757ae4007f2"
+  integrity sha512-u76G07278nacmHiSKs1yxbB2se0aiuQH8uJidyDMc6har3HRpFAR/sDKrZR426p03vu7QuvPAcaLMhp4kWcRbg==
 
 htmlparser2@^6.1.0:
   version "6.1.0"

@@ -88,6 +88,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@ncpa0cpl/vanilla-jsx": "0.0.1-alpha.28",
     "adwavecss": ">=0.0.13",
     "jsxte": "^3.3.1",
     "jsxte-wc": "^1.1.5"

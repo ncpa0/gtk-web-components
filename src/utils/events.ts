@@ -1,4 +1,6 @@
-export class CustomMouseEvent<T> extends CustomEvent<T> {
+export class CustomMouseEvent<N extends string, T> extends CustomEvent<T> {
+  declare readonly type: N;
+
   readonly altKey: boolean;
   readonly button: number;
   readonly buttons: number;
@@ -20,7 +22,7 @@ export class CustomMouseEvent<T> extends CustomEvent<T> {
   readonly y: number;
   getModifierState: (keyArg: string) => boolean;
 
-  constructor(name: string, detail: T, base: MouseEvent) {
+  constructor(name: N, detail: T, base: MouseEvent) {
     super(name, {
       detail,
       bubbles: true,
@@ -50,7 +52,9 @@ export class CustomMouseEvent<T> extends CustomEvent<T> {
   }
 }
 
-export class CustomKeyboardEvent<T> extends CustomEvent<T> {
+export class CustomKeyboardEvent<N extends string, T> extends CustomEvent<T> {
+  declare readonly type: N;
+
   readonly altKey: boolean;
   readonly charCode: number;
   readonly code: string;
@@ -64,7 +68,7 @@ export class CustomKeyboardEvent<T> extends CustomEvent<T> {
   readonly shiftKey: boolean;
   getModifierState: (keyArg: string) => boolean;
 
-  constructor(name: string, detail: T, base: KeyboardEvent) {
+  constructor(name: N, detail: T, base: KeyboardEvent) {
     super(name, {
       detail,
       bubbles: true,
@@ -86,7 +90,9 @@ export class CustomKeyboardEvent<T> extends CustomEvent<T> {
   }
 }
 
-export class CustomPointerEvent<T> extends CustomEvent<T> {
+export class CustomPointerEvent<N extends string, T> extends CustomEvent<T> {
+  declare readonly type: N;
+
   readonly height: number;
   readonly isPrimary: boolean;
   readonly pointerId: number;
@@ -100,7 +106,7 @@ export class CustomPointerEvent<T> extends CustomEvent<T> {
   getCoalescedEvents: () => PointerEvent[];
   getPredictedEvents: () => PointerEvent[];
 
-  constructor(name: string, detail: T, base: PointerEvent) {
+  constructor(name: N, detail: T, base: PointerEvent) {
     super(name, {
       detail,
       bubbles: true,

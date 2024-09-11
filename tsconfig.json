@@ -15,11 +15,9 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "noImplicitAny": true,
-    "jsxImportSource": "jsxte",
+    "jsxImportSource": "@ncpa0cpl/vanilla-jsx",
     "jsx": "react-jsx",
     "useDefineForClassFields": false
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
